@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Весёлая школа - Подготовка к школе и помощь с 1 по 4 класс | Репетитор для детей</title>
+    <meta name="description" content="Индивидуальные занятия для детей 6-10 лет. Подготовка к школе, помощь по школьной программе 1-4 класс в игровой форме. Онлайн занятия через видеоконференции.">
+    <meta name="keywords" content="репетитор для детей, подготовка к школе, помощь 1 класс, помощь 2 класс, помощь 3 класс, помощь 4 класс, занятия для младших школьников, онлайн обучение детей, видеоконференции для детей">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F9F7F0'/%3E%3Cpath d='M6 16h20v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V16z' fill='%231E40AF'/%3E%3Cpath d='M6 12h20v4H6z' fill='%23FBBF24'/%3E%3Cpath d='M10 6l4 6h4l-4-6z' fill='%2310B981'/%3E%3Ccircle cx='22' cy='10' r='2' fill='%23EF4444'/%3E%3C/svg%3E">   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f7f0;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .school-board {
+            background-color: #1a3e1a;
+            color: white;
+            border: 10px solid #8B4513;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .chalk-effect {
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 0 0 2px white;
+        }
+        .notebook-paper {
+            background: repeating-linear-gradient(
+                #fff,
+                #fff 20px,
+                #f0f0f0 28px,
+                #f0f0f0 22px
+            );
+            border-left: 1px solid #ccc;
+            padding-left: 30px;
+        }
+        .pencil-animation {
+            animation: pencil 2s infinite alternate;
+        }
+        @keyframes pencil {
+            0% { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfTRTIrAAAAAL0LflYOLmbmL1wDLF680Eer9WIM"></script>
+</head>
+<body>
+    <!-- Шапка с анимацией -->
+    <header class="bg-yellow-100 py-4 border-b-4 border-yellow-300">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="https://img.icons8.com/color/48/000000/school.png" alt="Логотип школы" class="w-12 h-12 mr-3 bounce">
+                <h1 class="text-3xl font-bold text-blue-800">
+                    <span class="text-yellow-500">Весёлая</span> Школа
+                </h1>
+            </div>
+            <div class="flex items-center">
+                <div class="mr-4 hidden md:block">
+                    <span class="text-lg font-semibold text-blue-700">Онлайн занятия</span>
+                </div>
+                <a href="tel:+79829015708" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 flex items-center">
+                    <img src="https://img.icons8.com/color/48/000000/phone.png" class="w-6 h-6 mr-2" alt="Телефон">
+                    <span>+7 (982) 901-57-08</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="bg-blue-50 py-12 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-800 mb-6 animate__animated animate__fadeInLeft">
+                    Учиться - это <span class="text-yellow-500">весело!</span>
+                </h2>
+                <p class="text-xl mb-6 text-gray-700 notebook-paper animate__animated animate__fadeIn animate__delay-1s">
+                    Привет! Я - Яна, репетитор для детей 6-10 лет. Помогаю подготовиться к школе и освоить программу 1-4 класса.
+                </p>
+                <div class="flex flex-wrap gap-4 animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="#form" class="bg-yellow-400 hover:bg-yellow-500 text-blue-800 font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 flex items-center">
+                        Записаться на занятие
+                        <img src="https://img.icons8.com/color/48/000000/checkmark.png" class="w-6 h-6 ml-2" alt="Записаться">
+                    </a>
+                    <a href="#video" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 flex items-center">
+                        Видеоконференции
+                        <img src="https://img.icons8.com/color/48/000000/video-call.png" class="w-6 h-6 ml-2" alt="Видео">
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate__animated animate__fadeInRight">
+                <div class="relative">
+                    <img src="https://img.icons8.com/color/96/000000/teacher.png" alt="Учитель" class="w-48 h-48 floating">
+                    <img src="https://img.icons8.com/color/48/000000/pencil.png" alt="Карандаш" class="absolute -top-6 -right-6 w-12 h-12 pencil-animation">
+                    <img src="https://img.icons8.com/color/48/000000/book.png" alt="Книга" class="absolute bottom-0 -left-6 w-12 h-12 animate__animated animate__pulse animate__infinite">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Почему дети любят мои занятия?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-yellow-50 p-6 rounded-xl shadow-lg border-2 border-yellow-200 hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://img.icons8.com/color/96/000000/children.png" alt="Игры" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-blue-700 mb-3">Игровой подход</h3>
+                    <p class="text-gray-700 text-center">Учимся через творческие задания. Никаких скучных уроков!</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-xl shadow-lg border-2 border-blue-200 hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://img.icons8.com/color/96/000000/conference-call.png" alt="Онлайн" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-blue-700 mb-3">Удобные онлайн-занятия</h3>
+                    <p class="text-gray-700 text-center">Занимаемся через Zoom в удобное время, не выходя из дома.</p>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://img.icons8.com/color/96/000000/mental-health.png" alt="Индивидуально" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-blue-700 mb-3">Индивидуальный подход</h3>
+                    <p class="text-gray-700 text-center">Программа подбирается специально под вашего ребёнка и его темп обучения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видеоконференции -->
+    <section id="video" class="py-12 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-6">Гибкие форматы занятий</h2>
+            <p class="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                Выберите удобный для вас способ обучения: онлайн, на дому или у преподавателя
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Как проходят занятия?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/checked-checkbox.png" class="w-6 h-6 mr-3 mt-1" alt="Галочка">
+                            <span class="text-gray-700">Онлайн через Zoom — занимайтесь из любой точки в удобное время</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/checked-checkbox.png" class="w-6 h-6 mr-3 mt-1" alt="Галочка">
+                            <span class="text-gray-700">На дому у ученика — если вы недалеко, я приеду к вам</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/checked-checkbox.png" class="w-6 h-6 mr-3 mt-1" alt="Галочка">
+                            <span class="text-gray-700">Записаться можно, заполнив форму ниже или связавшись со мной по телефону</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/checked-checkbox.png" class="w-6 h-6 mr-3 mt-1" alt="Галочка">
+                            <span class="text-gray-700">Стоимость занятий: 700 рублей в час</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/2 animate__animated animate__fadeInRight">
+                    <div class="relative">
+                        <img src="https://img.icons8.com/color/96/000000/zoom.png" alt="Zoom" class="w-32 h-32 mx-auto mb-6 floating">
+                        <div class="absolute -bottom-6 -right-6 bg-yellow-200 rounded-full p-4 shadow-lg">
+                            <img src="https://img.icons8.com/color/48/000000/children--v1.png" alt="Дети" class="w-12 h-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программы -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-6">Мои программы</h2>
+            <p class="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                Индивидуальные занятия для разных возрастов и целей
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <img src="https://img.icons8.com/color/48/000000/abc.png" alt="Азбука" class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-blue-700 mb-3">Подготовка к школе</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>Обучение чтению</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>Основы счёта</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>Развитие речи</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>Подготовка руки к письму</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-xl border-2 border-green-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <img src="https://img.icons8.com/color/48/000000/1.png" alt="1 класс" class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-green-700 mb-3">Помощь 1 класс</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Чтение и письмо</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Математика</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Окружающий мир</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Развитие внимания</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full">
+                            <img src="https://img.icons8.com/color/48/000000/2.png" alt="2-3 класс" class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-yellow-700 mb-3">Помощь 2-3 класс</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>Русский язык</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>Математика</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>Чтение</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>Развитие логики</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full">
+                            <img src="https://img.icons8.com/color/48/000000/4.png" alt="4 класс" class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-red-700 mb-3">Помощь 4 класс</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>Подготовка к ВПР</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>Сложные темы программы</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>Развитие самостоятельности</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>Подготовка к средней школе</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="form" class="py-12 px-4 bg-blue-800 text-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-6">Записаться на занятие</h2>
+            <p class="text-xl text-center mb-12 max-w-2xl mx-auto">
+                Оставьте заявку, и я свяжусь с вами для уточнения деталей
+            </p>
+            
+            <form id="signup-form" class="bg-white rounded-xl shadow-xl p-8 text-gray-800 animate__animated animate__fadeInUp">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Имя родителя</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ваше имя" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="child-name" class="block text-gray-700 font-medium mb-2">Имя ребёнка</label>
+                    <input type="text" id="child-name" name="child-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Имя ребёнка" required>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="age" class="block text-gray-700 font-medium mb-2">Возраст ребёнка</label>
+                    <select id="age" name="age" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <option value="">Выберите возраст</option>
+                        <option value="5-6">5-6 лет (подготовка к школе)</option>
+                        <option value="7">7 лет (1 класс)</option>
+                        <option value="8">8 лет (2 класс)</option>
+                        <option value="9">9 лет (3 класс)</option>
+                        <option value="10">10 лет (4 класс)</option>
+                    </select>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="goal" class="block text-gray-700 font-medium mb-2">Цель занятий</label>
+                    <textarea id="goal" name="goal" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Например: подготовка к школе, помощь с математикой, улучшение чтения..."></textarea>
+                </div>
+                
+                <div class="flex items-center mb-6">
+                    <input type="checkbox" id="agree" name="agree" value="true" class="w-4 h-4 text-blue-600 rounded focus:ring-blue-500" required>
+                    <label for="agree" class="ml-2 text-sm text-gray-700">Я согласен на обработку персональных данных</label>
+                </div>
+                <input type="hidden" id="recaptcha-token" name="recaptcha-token">
+                <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-800 font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 flex items-center justify-center">
+                    Отправить заявку
+                    <img src="https://img.icons8.com/color/48/000000/send-letter.png" class="w-6 h-6 ml-2" alt="Отправить">
+                </button>
+            </form>
+            
+            <!-- Модальное окно -->
+            <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+                <div class="bg-white rounded-lg p-8 max-w-md w-full text-center">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-4">Спасибо за заявку!</h2>
+                    <p class="text-gray-700 mb-6">Я свяжусь с вами в ближайшее время.</p>
+                    <button id="close-modal" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+    </script>
+
+    <!-- Отзывы -->
+    <!-- <section class="py-12 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Отзывы родителей</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/user-female-circle.png" class="w-12 h-12 mr-4" alt="Мама">
+                        <div>
+                            <h4 class="font-bold text-blue-700">Елена, мама Маши (7 лет)</h4>
+                            <div class="flex">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Маша с нетерпением ждёт каждое занятие! За полгода подготовки к школе научилась читать, считать и даже полюбила математику. Спасибо за индивидуальный подход!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/user-male-circle.png" class="w-12 h-12 mr-4" alt="Папа">
+                        <div>
+                            <h4 class="font-bold text-blue-700">Андрей, папа Егора (8 лет)</h4>
+                            <div class="flex">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"У сына были проблемы с русским языком, не мог запомнить правила. После 3 месяцев занятий с Анастасией стал делать меньше ошибок, а главное - появился интерес к предмету!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/user-female-circle.png" class="w-12 h-12 mr-4" alt="Мама">
+                        <div>
+                            <h4 class="font-bold text-blue-700">Ольга, мама Полины (10 лет)</h4>
+                            <div class="flex">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                                <img src="https://img.icons8.com/color/16/000000/star.png" alt="Звезда">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Отличная подготовка к ВПР! Полина перестала бояться контрольных, научилась справляться с волнением. Результаты превзошли все ожидания. Рекомендую всем родителям!"</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FAQ -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Часто задаваемые вопросы</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-blue-50 hover:bg-blue-100 transition duration-300">
+                        <span class="font-medium text-blue-700 text-left">С какого возраста можно начинать занятия?</span>
+                        <img src="https://img.icons8.com/color/24/000000/plus.png" class="transform transition duration-300" alt="Плюс">
+                    </button>
+                    <div class="p-4 text-gray-700 hidden">
+                        Оптимальный возраст для начала подготовки к школе - 5-6 лет. Для помощи по школьной программе - с 7 лет (1 класс). В каждом случае программа подбирается индивидуально.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-green-50 hover:bg-green-100 transition duration-300">
+                        <span class="font-medium text-green-700 text-left">Как часто проходят занятия?</span>
+                        <img src="https://img.icons8.com/color/24/000000/plus.png" class="transform transition duration-300" alt="Плюс">
+                    </button>
+                    <div class="p-4 text-gray-700 hidden">
+                        Рекомендую 2-3 занятия в неделю по 30-45 минут для дошкольников и 45-60 минут для школьников. График подбирается индивидуально под ваши пожелания и возможности ребёнка.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-yellow-50 hover:bg-yellow-100 transition duration-300">
+                        <span class="font-medium text-yellow-700 text-left">Нужно ли присутствие родителя на занятии?</span>
+                        <img src="https://img.icons8.com/color/24/000000/plus.png" class="transform transition duration-300" alt="Плюс">
+                    </button>
+                    <div class="p-4 text-gray-700 hidden">
+                        Для детей 5-7 лет желательно присутствие родителя хотя бы на первых занятиях. Школьники обычно занимаются самостоятельно. После каждого занятия я даю обратную связь родителям.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-red-50 hover:bg-red-100 transition duration-300">
+                        <span class="font-medium text-red-700 text-left">Какие материалы нужны для занятий?</span>
+                        <img src="https://img.icons8.com/color/24/000000/plus.png" class="transform transition duration-300" alt="Плюс">
+                    </button>
+                    <div class="p-4 text-gray-700 hidden">
+                        Для онлайн-занятий нужен только компьютер/планшет с выходом в интернет и установленным Zoom. Все учебные материалы я предоставляю в электронном виде. Для некоторых заданий может понадобиться распечатать листы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="py-12 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Контакты</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Свяжитесь со мной</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/phone.png" class="w-6 h-6 mr-3 mt-1" alt="Телефон">
+                            <div>
+                                <p class="font-medium text-gray-700">Телефон</p>
+                                <a href="tel:+79829015708" class="text-blue-600 hover:underline">+7 (982) 901-57-08</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/email.png" class="w-6 h-6 mr-3 mt-1" alt="Email">
+                            <div>
+                                <p class="font-medium text-gray-700">Email</p>
+                                <a href="mailto:yanochkakiseleva@mail.ru" class="text-blue-600 hover:underline">yanochkakiseleva@mail.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/telegram-app.png" class="w-6 h-6 mr-3 mt-1" alt="Telegram">
+                            <div>
+                                <p class="font-medium text-gray-700">Telegram</p>
+                                <a href="https://t.me/YanaAlekseevnaM" target="_blank" class="text-blue-600 hover:underline">@YanaAlekseevnaM</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <img src="https://img.icons8.com/color/48/000000/vk-com.png" class="w-6 h-6 mr-3 mt-1" alt="VK">
+                            <div>
+                                <p class="font-medium text-gray-700">ВКонтакте</p>
+                                <a href="https://vk.com/myasovskaya" target="_blank" class="text-blue-600 hover:underline">Яна Алексеевна</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">График работы</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="font-medium text-gray-700">Понедельник - Пятница</span>
+                            <span class="text-gray-600">09:00 - 19:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium text-gray-700">Суббота - Воскресенье</span>
+                            <span class="text-gray-600">Выходной</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-blue-700 mb-2">Принимаю оплату:</h4>
+                        <div class="flex space-x-4">
+                            <img src="https://img.icons8.com/color/48/000000/visa.png" class="w-10 h-6" alt="Visa">
+                            <img src="https://img.icons8.com/color/48/000000/mir.png" class="w-10 h-6" alt="Mir">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-blue-900 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://img.icons8.com/color/48/000000/school.png" alt="Логотип школы" class="w-10 h-10 mr-3">
+                        <span class="text-2xl font-bold">
+                            <span class="text-yellow-300">Весёлая</span> Школа
+                        </span>
+                    </div>
+                    <p class="mt-2 text-blue-200">Индивидуальные занятия для детей 6-10 лет</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://t.me/YanaAlekseevnaM" class="text-blue-200 hover:text-white transition duration-300">
+                        <img src="https://img.icons8.com/color/48/000000/telegram-app.png" class="w-8 h-8" alt="Telegram">
+                    </a>
+                    <a href="https://vk.com/myasovskaya" class="text-blue-200 hover:text-white transition duration-300">
+                        <img src="https://img.icons8.com/color/48/000000/vk-com.png" class="w-8 h-8" alt="VK">
+                    </a>
+                    <a href="https://wa.me/79829015708" class="text-blue-200 hover:text-white transition duration-300">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" class="w-8 h-8" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300 text-sm">
+                <p>© 2025 Весёлая школа - репетитор для детей. Все права защищены.</p>
+                <p class="mt-2"><a href="/tuter/politika.pdf" class="hover:underline">Политика конфиденциальности</a> | <a href="/tuter/oferta.pdf" class="hover:underline">Договор-оферта</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('img');
+                
+                if (content && icon) {
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.classList.add('rotate-45');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.classList.remove('rotate-45');
+                    }
+                }
+            });
+        });
+        
+        document.getElementById('phone').addEventListener('input', function (e) {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+            e.target.value = !x[2] ? x[1] : x[1] + ' (' + x[2] + ') ' + x[3] + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+        });
+        
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfTRTIrAAAAAL0LflYOLmbmL1wDLF680Eer9WIM', {action: 'submit'}).then(function(token) {
+                    // Добавляем токен в форму
+                    form.querySelector('#recaptcha-token').value = token;
+                    
+                    const data = {
+                        name: form.querySelector('#name').value,
+                        phone: form.querySelector('#phone').value,
+                        'child-name': form.querySelector('#child-name').value,
+                        age: form.querySelector('#age').value,
+                        goal: form.querySelector('#goal').value,
+                        agree: form.querySelector('#agree').checked,
+                        'recaptcha-token': token
+                    };
+                    
+                    console.log('Отправляемые данные:', data); // Отладка
+                    
+                    fetch('https://script.google.com/macros/s/AKfycbzE-jDgdk3alY3AMzN3A4X2XfsEFApn2zpY1QxFa3NQGphgbmFjpfBlr-98Uu50JyTK/exec', {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    }).then(() => {
+                        document.getElementById('modal').classList.remove('hidden');
+                        form.reset();
+                    }).catch(error => {
+                        console.error('Ошибка:', error);
+                        alert('Ошибка при отправке: ' + error.message);
+                    });
+                });
+            });
+        });
+        
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('modal').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
